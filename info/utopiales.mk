@@ -1,4 +1,3 @@
-NAME			=	utopiales
 FULL_TITLE		=	"Afrique"
 DESC			=	""
 KEYWORD			=	"nouvelle,utopiales"

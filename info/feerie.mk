@@ -1,4 +1,3 @@
-NAME			=	feerie
 FULL_TITLE		=	"Féerie chevaleresque"
 DESC			=	"Une nouvelle qui parle d'un chevalier délivrant une fée."
 KEYWORD			=	"nouvelle,chevalier,fee"

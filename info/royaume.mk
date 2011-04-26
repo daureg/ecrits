@@ -1,4 +1,3 @@
-NAME			=	royaume
 FULL_TITLE		=	"Royaume en péril"
 DESC			=	"Le monde des hommes s'effondre mais qu'y peuvent-ils ?"
 KEYWORD			=	"nouvelle,royaume,chaos,désespoir"

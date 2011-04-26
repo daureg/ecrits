@@ -1,4 +1,3 @@
-NAME			=	chateau
 FULL_TITLE		=	"Château"
 DESC			=	"Des châteaux dans les cieux"
 KEYWORD			=	"nouvelle,château,ciel"

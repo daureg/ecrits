@@ -1,4 +1,3 @@
-NAME			=	dieu
 FULL_TITLE		=	"Dieu"
 DESC			=	""
 KEYWORD			=	"nouvelle"

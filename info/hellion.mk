@@ -1,4 +1,3 @@
-NAME			=	hellion
 FULL_TITLE		=	"Hellion"
 DESC			=	"Le début d'une tragédie en alexandrin."
 KEYWORD			=	"tragédie,alexandrin"
