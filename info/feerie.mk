@@ -5,3 +5,4 @@ DATE            	=   	"Avril 2008"
 ROOT_LEVEL		=	"2"
 PDF_VIEWER		=	epdfview
 VERSION			=	1.0
+FINI			=	1
