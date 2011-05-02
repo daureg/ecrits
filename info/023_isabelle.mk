@@ -1,4 +1,4 @@
-FULL_TITLE		=	"Les larmes d'Isabelle"
+FULL_TITLE		=	"Les larmes d\'Isabelle"
 DESC			=	""
 KEYWORD			=	"poème,nature"
 DATE            	=   	"Mars 2011"

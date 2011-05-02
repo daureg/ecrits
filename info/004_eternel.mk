@@ -1,4 +1,4 @@
-FULL_TITLE		=	"L'Éternel"
+FULL_TITLE		=	"L\'Éternel"
 DESC			=	"Un être immortel sur réveille sur une plage"
 KEYWORD			=	"nouvelle,immortel,plage"
 DATE            	=   	"2003 – 2004"
