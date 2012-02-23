@@ -1,0 +1,28 @@
+\documentclass[a4paper,final,11pt,twoside,notitlepage]{article}
+\usepackage{polyglossia}
+\setmainlanguage{french}
+\XeTeXdefaultencoding utf-8
+\usepackage{xltxtra}
+\usepackage{indentfirst}
+%\usepackage{fancyhdr}
+\widowpenalty=1000
+\clubpenalty=1000
+%\fancyhead{} % clear all header fields
+%\fancyfoot{} % clear all footer fields
+%\fancyfoot[CE,CO]{\small{\thepage}}
+%\renewcommand{\headrulewidth}{0.0pt}
+%\pagestyle{fancy}
+\setmainfont{Linux Libertine O}
+\fontspec[Ligatures={Common}]{Linux Libertine O}
+\fontspec[Numbers={OldStyle}]{Linux Libertine O}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{sectsty}
+\sectionfont{\normalfont \centering \itshape \small}
+\title{Œuvres}
+\author{Géraud \textsc{Le Falher}}
+\date{}
+\begin{document}
+\tableofcontents
+\newpage
+\input{all} 
+\end{document}

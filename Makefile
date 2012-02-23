@@ -1,9 +1,18 @@
 SOURCES = $(wildcard *.nv)
 OBJECTS = $(SOURCES:.nv=)
 SAVE=textes-`date +"%Y%m%d"`
-JUST_TEX ?= 0
+JUST_TEX ?= 1
 
 all: $(OBJECTS)
+ifeq ($(JUST_TEX),1)
+	cat result/*.tex > result/all.texx
+	mv result/all.tex{x,}
+	sed -i "s/\\\tiret/―/g" result/all.tex
+	sed -i "s/\\\og/«/g" result/all.tex
+	sed -i "s/\\\myfg/»/g" result/all.tex
+	cp do_it.tex result/
+	cd result; xelatex do_it.tex && xelatex do_it.tex && mv {do_it,oeuvres}.pdf
+endif
 
 %: %.nv
 	cp $< script/
