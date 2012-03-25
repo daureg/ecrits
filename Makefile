@@ -19,6 +19,8 @@ endif
 	cp info/$@.mk script/config/info.mk
 ifeq ($(JUST_TEX),0)
 	cd script; $(MAKE) -f Makefile NAME=$@ html_full txt xetex
+	cd script; $(MAKE) -f Makefile NAME=$@ link
+	cat script/link.htm >> result/links.html
 	cp script/$@{.xhtml,.pdf,.txt,_plain.txt} result/
 else
 	cd script; $(MAKE) -f Makefile NAME=$@ MK_TEX_TITLE=1 print
