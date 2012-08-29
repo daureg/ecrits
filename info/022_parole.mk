@@ -1,4 +1,4 @@
-FULL_TITLE		=	"Sélène irradiée"
+FULL_TITLE		=	"Il ne leur manque que la parole"
 DESC			=	"Zohel enquête sur la disparition mystérieuse de Jane de la cage dans laquelle il vit."
 KEYWORD			=	"nouvelle,lune,radiation,métamorphose,singe"
 DATE            	=   	"Février 2011"
