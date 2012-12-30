@@ -1,4 +1,4 @@
-FULL_TITLE		=	"Juste un peu d'or"
+FULL_TITLE		=	"Juste un peu d\'or"
 DESC			=	"Une aventure d'un brigand peu prometteur."
 KEYWORD			=	"nouvelle,fantasy,crime,or"
 DATE            	=   	"2012"
