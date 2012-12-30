@@ -2,6 +2,7 @@ SOURCES = $(wildcard *.nv)
 OBJECTS = $(SOURCES:.nv=)
 SAVE=textes-`date +"%Y%m%d"`
 JUST_TEX ?= 1
+GERAUDSOFT ?= 0
 
 all: $(OBJECTS)
 ifeq ($(JUST_TEX),1)
@@ -22,6 +23,13 @@ ifeq ($(JUST_TEX),0)
 	cd script; $(MAKE) -f Makefile NAME=$@ link
 	cat script/link.htm >> result/links.html
 	cp script/$@{.xhtml,.pdf,.txt,_plain.txt} result/
+ifeq ($(GERAUDSOFT),1)
+	cd script; $(MAKE) -f Makefile NAME=$@ geraudsoft
+	cp script/index.php result/
+	mv result/{$@,`echo $@|tr -d '[0-9_]'`}.pdf
+	mv result/{$@,`echo $@|tr -d '[0-9_]'`}.txt
+	mv result/{$@_plain,`echo $@|tr -d '[0-9_]'`_plain}.txt
+endif
 else
 	cd script; $(MAKE) -f Makefile NAME=$@ MK_TEX_TITLE=1 print
 	cp script/texte.tex result/$@.tex
