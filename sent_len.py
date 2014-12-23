@@ -29,6 +29,9 @@ if __name__ == '__main__':
             print(78*'-')
             separated = True
         print('{}{}'.format(str(l).ljust(5), display_sentence(s)))
+    lengths = [_[1] for _ in data]
     if sparkline:
-        lengths = [_[1] for _ in data]
         print(sparkline.sparkify(lengths))
+    import numpy as np
+    print('average: {:.1f}, std: {:.1f}'.format(np.mean(lengths),
+                                                np.std(lengths)))
