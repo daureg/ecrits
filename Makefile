@@ -32,6 +32,7 @@ ifeq ($(GERAUDSOFT),1)
 endif
 else
 	cd script; $(MAKE) -f Makefile NAME=$@ MK_TEX_TITLE=1 print
+	cp script/$@-print.pdf result/
 	cp script/texte.tex result/$@.tex
 endif
 	cd script; $(MAKE) -f Makefile NAME=$@ distclean
